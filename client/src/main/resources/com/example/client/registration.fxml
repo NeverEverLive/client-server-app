@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.StackPane?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="400.0" spacing="3.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.client.CustomController">
+   <children>
+      <Text id="titlePOST" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration">
+              <font>
+                 <Font size="40"/>
+              </font>
+         <VBox.margin>
+            <Insets bottom="20.0" top="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text id="titlePOST" strokeType="OUTSIDE" strokeWidth="0.0" text="POST request">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField id="loginPOST" fx:id="loginPOST" prefHeight="25.0" prefWidth="100.0" promptText="Login" />
+      <PasswordField id="passwordPOST" fx:id="passwordPOST" prefHeight="25.0" prefWidth="100.0" promptText="Password" />
+      <Button id="buttonPOST" fx:id="buttonPOST" mnemonicParsing="false" onAction="#testPOSTRegistration" text="Submit">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Text id="titleGET" strokeType="OUTSIDE" strokeWidth="0.0" text="GET request">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField id="loginGET" fx:id="loginGET" prefHeight="25.0" prefWidth="100.0" promptText="Login" />
+      <PasswordField id="passwordGET" fx:id="passwordGET" prefHeight="25.0" prefWidth="100.0" promptText="Password" />
+      <Button id="buttonGET" fx:id="buttonGET" mnemonicParsing="false" onAction="#testGETRegistration" text="Submit" />
+      <StackPane>
+         <Button id="backButton" fx:id="backButton" mnemonicParsing="false" StackPane.alignment="BOTTOM_RIGHT"
+                 onAction="#redirect_to_select" text="Back"/>
+      </StackPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
